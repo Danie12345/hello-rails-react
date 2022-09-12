@@ -27,6 +27,9 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Linters
+gem 'rubocop', '>= 1.0', '< 2.0'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -39,6 +42,15 @@ gem "jbuilder"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
+gem 'ffi'
+
+gem 'cancancan'
+
+gem 'dotenv-rails'
+
+# https://github.com/heartcombo/devise
+gem 'devise', github: 'heartcombo/devise', branch: 'main'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -48,6 +60,15 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+
+  # Rspec
+  gem 'rspec-rails'
+
+  # https://github.com/thoughtbot/factory_bot/tree/master
+  gem 'factory_bot_rails'
+
+  # https://github.com/flyerhzm/bullet
+  gem 'bullet'
 end
 
 group :development do
@@ -65,5 +86,10 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
-  gem "webdrivers"
+
+  # https://github.com/titusfortner/webdrivers
+  gem 'webdrivers', '~> 5.0'
+  # Code coverage
+  # https://github.com/colszowka/simplecov
+  gem 'simplecov', require: false
 end
