@@ -48,6 +48,8 @@ gem 'cancancan'
 
 gem 'dotenv-rails'
 
+gem 'rack-cors'
+
 # https://github.com/heartcombo/devise
 gem 'devise', github: 'heartcombo/devise', branch: 'main'
 
