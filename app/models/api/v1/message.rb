@@ -1,2 +1,8 @@
-class Api::V1::Message < ApplicationRecord
+# frozen_string_literal: true
+
+module Api
+  module V1
+    class Message < ApplicationRecord
+    end
+  end
 end
