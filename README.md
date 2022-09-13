@@ -28,6 +28,7 @@ git clone git@github.com:danie12345/hello-rails-react.git
 
 ### Install dependencies
 run: `bundle install`
+
 run: `npm install`
 
 ### Run the app
