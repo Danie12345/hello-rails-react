@@ -1,8 +1,7 @@
-import http from "../http-common";
-const getRandomMessage = () => {
-  return http.get("/messages");
-};
+import http from '../http-common';
+
+const getRandomMessage = () => http.get('/messages');
 const RailsService = {
-  getRandomMessage
+  getRandomMessage,
 };
 export default RailsService;

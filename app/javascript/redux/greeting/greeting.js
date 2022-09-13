@@ -5,10 +5,9 @@ const SET_GREET = 'messages/greet/SET_GREET';
 async function setGreeting(dispatch, getState) {
   const { greeting } = getState();
   const { data } = await RailsService.getRandomMessage();
-  const payload = {
-    ...data
+  let payload = {
+    ...data,
   };
-  console.log(payload);
   if (Object.keys(greeting).length === 0) {
     payload = { body: '' };
   }

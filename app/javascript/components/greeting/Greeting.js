@@ -12,10 +12,10 @@ const Greeting = () => {
 
   return (
     <div>
-      <button onClick={() => dispatch(setGreeting)}>New message</button>
+      <button type="button" onClick={() => dispatch(setGreeting)}>New message</button>
       <div>{greeting.body}</div>
     </div>
-  )
-}
+  );
+};
 
 export default Greeting;
