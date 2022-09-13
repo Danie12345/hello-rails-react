@@ -50,6 +50,10 @@ gem 'dotenv-rails'
 
 gem 'rack-cors'
 
+gem 'foreman'
+
+gem 'importmap-rails'
+
 # https://github.com/heartcombo/devise
 gem 'devise', github: 'heartcombo/devise', branch: 'main'
 
